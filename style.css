@@ -3,7 +3,6 @@ body {
   font-size: 24px;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 main {
@@ -13,7 +12,6 @@ main {
   align-items: center;
   justify-content: center;
   gap: 2em;
-  margin-inline: auto;
   padding-inline: 2em;
 }
 
@@ -46,7 +44,7 @@ main {
 }
 
 .description {
-  color: slategray;
+  color: #666666;
 }
 
 .facebook {
