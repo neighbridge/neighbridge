@@ -38,6 +38,8 @@ main {
 
 .signuphere img {
   height: 3.5em;
+  width: 100%;
+  max-width: 15em;
 }
 
 .social {
