@@ -36,6 +36,10 @@ main {
   gap: 2em;
 }
 
+.signuphere img {
+  height: 3.5em;
+}
+
 .social {
   display: flex;
   align-items: center;
