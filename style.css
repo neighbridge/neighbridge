@@ -1,28 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: serif;
-  font-size: 24px;
+  font-size: clamp(16px, 2vw, 24px);
   padding: 0;
   margin: 0;
 }
 
 main {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
-  padding-inline: 2em;
-}
-
-.description {
+  padding: 2em;
+  color: #666666;
   text-align: center;
-  font-size: 16px;
-}
-
-.description1 {
-  text-align: center;
-  font-size: 28px;
+  max-width: 60rem;
+  margin-inline: auto;
 }
 
 .logo {
@@ -30,13 +22,20 @@ main {
   max-width: 30em;
 }
 
+.section {
+  margin: 3em 0;
+}
+
+h2 {
+  font-weight: 400;
+}
+
 .social_wrapper {
-  font-family:  Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
   justify-content: space-around;
-  gap: 2em;
+  gap: 1em;
 }
 
 .social {
@@ -50,18 +49,6 @@ main {
   height: 1.5em;
 }
 
-.signuphere img {
-  height: 3.5em;
-}
-
-.description {
-  color: #666666;
-}
-
-.description1 {
-  color: #666666;
-}
-
 .facebook {
   color: #1977f3;
 }
@@ -72,4 +59,15 @@ main {
 
 .meetup {
   color: #ff1154;
+}
+
+.signup {
+  text-decoration: none;
+  background-color: rgb(238, 108, 56);
+  color: white;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0.5em 2em;
+  border-radius: 10000px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
