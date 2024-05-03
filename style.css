@@ -1,10 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(16px, 2vw, 24px);
+  font-size: 24px;
   padding: 0;
   margin: 0;
 }
@@ -16,7 +12,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 2em;
-  padding: 2em;
+  padding-inline: 2em;
 }
 
 .description {
@@ -36,12 +32,6 @@ main {
   gap: 2em;
 }
 
-.signuphere img {
-  height: 3.5em;
-  width: 100%;
-  max-width: 15em;
-}
-
 .social {
   display: flex;
   align-items: center;
@@ -51,6 +41,10 @@ main {
 
 .social img {
   height: 1.5em;
+}
+
+.signuphere img {
+  height: 2.5em;
 }
 
 .description {
