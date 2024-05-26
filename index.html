@@ -1,112 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Neighbridge</title>
-
+    <title>NeighBridge - 名古屋のインターナショナルコミュニティ</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- meta tags for SEO -->
     <meta name="robots" content="index, follow" />
-    <meta
-      name="keywords"
-      content="Neighbridge, International, Community, Nagoya"
-    />
-    <meta
-      name="description"
-      content="NeighBridge is an international community in Nagoya excited to welcome
-      you home!"
-    />
-
-    <!-- OpenGraph (Facebook) -->
-    <meta property="og:title" content="neighbridge" />
-    <meta
-      property="og:description"
-      content="NeighBridge is an international community in Nagoya excited to welcome
-          you home!"
-    />
+    <meta name="keywords" content="Neighbridge, International Community, Nagoya, インターナショナルコミュニティ, 名古屋, 国際交流" />
+    <meta name="description" content="NeighBridgeは名古屋にあるインターナショナルコミュニティです。性別、国籍、年齢などの壁を超えて、皆さんを温かく歓迎します。" />
+    <meta property="og:title" content="NeighBridge - 名古屋のインターナショナルコミュニティ" />
+    <meta property="og:description" content="NeighBridgeは名古屋にあるインターナショナルコミュニティです。性別、国籍、年齢などの壁を超えて、皆さんを温かく歓迎します。" />
     <meta property="og:url" content="https://neighbridge.com" />
-    <meta
-      property="og:image"
-      content="https://neighbridge.com/img/neighbridge.svg"
-    />
+    <meta property="og:image" content="https://neighbridge.com/img/neighbridge_logo.png" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="ja_JP" />
-
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary" />
-    <meta property="twitter:title" content="Neighbridge" />
-    <meta
-      property="twitter:description"
-      content="NeighBridge is an international community in Nagoya excited to welcome
-          you home!"
-    />
-    <meta
-      property="twitter:image"
-      content="https://neighbridge.com/img/neighbridge.svg"
-    />
+    <meta property="twitter:title" content="NeighBridge - 名古屋のインターナショナルコミュニティ" />
+    <meta property="twitter:description" content="NeighBridgeは名古屋にあるインターナショナルコミュニティです。性別、国籍、年齢などの壁を超えて、皆さんを温かく歓迎します。" />
+    <meta property="twitter:image" content="https://neighbridge.com/img/neighbridge_logo.png" />
     <meta property="twitter:image:alt" content="Neighbridge logo" />
-
-    <!-- Assets -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMB8FZYQ7k5C0rVkrjhAUpxlf/2T1eS7mSVp6w" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <link rel="canonical" href="https://neighbridge.com" />
-  </head>
-  <body>
-    <main>
-      <img src="img/neighbridge_logo.png" alt="Neighbridge" class="logo" />
-
-      <div class="section">
-        <p>
-          NeighBridge is an international community in Nagoya excited to welcome
-          you home!
-        </p>
-        <p>
-          ネイブリッジは、「おかえり」があふれる名古屋のインターナショナルコミュニティです！
-        </p>
-      </div>
-
-      <a class="signup" href="https://linktr.ee/NeighBridge">
-        <div>Sign up here!</div>
-        <div>申し込みはこちらから!</div>
-      </a>
-
-      <div class="section">
-        <h2>Mission</h2>
-        <p>
-          Our aim for this community is building bridges to become neighbors
-          crossing over any walls such as gender, nationalities, and ages.
-        </p>
-        <p>
-          私たちのコミュニティの目的は、性別、国籍、年齢などの壁を超えて橋を渡し、隣人となること。
-        </p>
-      </div>
-
-      <div class="social_wrapper section">
-        <a class="social meetup" href="https://www.meetup.com/neighbridge/">
-          <img src="img/meetup.svg" alt="Meetup" />
-          <span>Meetup</span>
-        </a>
-        <a
-          class="social instagram"
-          href="https://www.instagram.com/itsneighbridge"
-        >
-          <img src="img/instagram.svg" alt="Instagram" />
-          <span>Instagram</span>
-        </a>
-        <a
-          class="social facebook"
-          href="https://www.facebook.com/profile.php?id=100088403629487"
-        >
-          <img src="img/facebook.svg" alt="Facebook" />
-          <span>Facebook</span>
-        </a>
-      </div>
-
-      <div class="section">
-        <p>Looking forward to becoming your neighbor there!</p>
-        <p>あなたの隣人となることを楽しみにしています！</p>
-      </div>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #ffe5d9;
+            color: #333;
+        }
+        header {
+            background: #f3a683;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        header nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #ddd;
+        }
+        main {
+            flex: 1;
+            text-align: center;
+            padding: 5rem 2rem;
+            position: relative;
+        }
+        .logo {
+            max-width: 150px;
+            margin: 0 auto 2rem;
+            display: block;
+        }
+        .description, .description1 {
+            margin: 1rem 0;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .social_wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .social img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s;
+        }
+        .social img:hover {
+            transform: scale(1.1);
+        }
+        .image-section {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .image-section img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #f3a683;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0.5rem 0;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#mission">Mission</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main id="home">
+        <img src="img/neighbridge_logo.png" alt="Neighbridge" class="logo" />
+        <div class="description">
+            <p>NeighBridge is an international community in Nagoya excited to welcome you home!</p>
+            <p>ネイブリッジは、「おかえり」があふれる名古屋のインターナショナルコミュニティです！</p>
+        </div>
+        <div class="social_wrapper">
+            <a class="signuphere" href="https://linktr.ee/NeighBridge">
+                <img src="img/signup.png" alt="Sign Up" />
+            </a>
+        </div>
+        <section id="mission">
+            <div class="description1">
+                <h2>Mission</h2>
+                <div class="description">
+                    <p>Our aim for this community is building bridges to become neighbors crossing over any walls such as gender, nationalities, and ages.</p>
+                    <p>私たちのコミュニティの目的は、性別、国籍、年齢などの壁を超えて橋を渡し、隣人となること。</p>
+                </div>
+            </div>
+        </section>
+        <div class="image-section">
+            <img src="img/photo1.jpg" alt="Community Photo 1" />
+            <img src="img/photo2.jpg" alt="Community Photo 2" />
+        </div>
+        <div class="social_wrapper">
+            <a class="social meetup" href="https://www.meetup.com/neighbridge/">
+                <img src="img/meetup.svg" alt="Meetup" />
+                <span>Meetup</span>
+            </a>
+            <a class="social instagram" href="https://www.instagram.com/itsneighbridge">
+                <img src="img/instagram.svg" alt="Instagram" />
+                <span>Instagram</span>
+            </a>
+            <a class="social facebook" href="https://www.facebook.com/profile.php?id=100088403629487">
+                <img src="img/facebook.svg" alt="Facebook" />
+                <span>Facebook</span>
+            </a>
+        </div>
+        <div class="description">
+            <p>Looking forward to becoming your neighbor there!</p>
+            <p>あなたの隣人となることを楽しみにしています！</p>
+        </div>
     </main>
-  </body>
+    <footer id="contact">
+        <p>-Building bridges to become neighbors-</p>
+        <p>-橋を渡し、隣人となる-</p>
+    </footer>
+</body>
 </html>
